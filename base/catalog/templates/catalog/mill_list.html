@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h1>Mill List</h1>
+
+{% if mill_list %}
+<ul>
+
+    {% for mill in mill_list %}
+    <li>
+        <a href="{{ mill.get_absolute_url }}">{{ mill.name }}</a>
+    </li>
+    {% endfor %}
+
+</ul>
+{% else %}
+<p>There is no mill in the catalog.</p>
+{% endif %} {% endblock %}

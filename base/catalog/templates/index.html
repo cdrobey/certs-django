@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block content %}
+<h1>Cert Catalog Home</h1>
+
+<p>Welcome to
+    <em>CertCatalog</em>, a website to manage Certs.</p>
+
+<h2>Dynamic content</h2>
+
+<p>The catalog has the following record counts:</p>
+<ul>
+    <li>
+        <strong>Material:</strong> {{ num_materials }}</li>
+    <li>
+        <strong>Vendor:</strong> {{ num_vendors }}</li>
+    <li>
+        <strong>Mills:</strong> {{ num_mills }}</li>
+</ul>
+
+{% endblock %}

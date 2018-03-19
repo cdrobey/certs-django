@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "/Users/chris.roberson/.virtualenvs/primary/bin",
+    "editor.formatOnSave": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintPath": "/Users/chris.roberson/.virtualenvs/primary/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.linting.pylintEnabled": true
+}

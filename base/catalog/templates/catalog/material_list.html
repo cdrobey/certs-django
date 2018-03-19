@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h1>Material List</h1>
+
+{% if material_list %}
+<ul>
+
+    {% for material in material_list %}
+    <li>
+        <a href="{{ material.get_absolute_url }}">{{ material.description }}, {{ material.po }}</a>
+    </li>
+    {% endfor %}
+
+</ul>
+{% else %}
+<p>There is no material in the catalog.</p>
+{% endif %} {% endblock %}

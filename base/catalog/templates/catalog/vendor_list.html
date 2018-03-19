@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<h1>Vendor List</h1>
+
+{% if vendor_list %}
+<ul>
+
+    {% for vendor in vendor_list %}
+    <li>
+        <a href="{{ vendor.get_absolute_url }}">{{ vendor.name }}</a>
+    </li>
+    {% endfor %}
+
+</ul>
+{% else %}
+<p>There is no Vendor in the catalog.</p>
+{% endif %} {% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+<h1>Title: {{ material.description }}</h1>
+
+<p>
+    <strong>Vendor:</strong> {{ material.vendor }}</p>
+<p>
+    <strong>Mill:</strong> {{ material.mill }}</p>
+<p>
+    <strong>Date Received:</strong> {{ material.date_received }}</p>
+<p>
+    <strong>Date Sold:</strong> {{ material.date_sold }}</p>
+<p>
+    <strong>PO:</strong> {{ material.po }}</p>
+<p>
+    {% if material.heat1 != '' %}
+    <strong>Heat Number #1:</strong> {{ material.heat1 }}{% endif %}</p>
+<p>
+    {% if material.heat2 != '' %}
+    <strong>Heat Number #2:</strong> {{ material.heat2 }}{% endif %}</p>
+<p>
+    {% if material.heat3 != '' %}
+    <strong>Heat Number #3:</strong> {{ material.heat3 }}{% endif %}</p>
+<p>
+    {% if material.heat4 != '' %}
+    <strong>Heat Number #4:</strong> {{ material.heat4 }}{% endif %}</p>
+<p>
+    {% if material.heat5 != '' %}
+    <strong>Heat Number #5:</strong> {{ material.heat5 }}{% endif %}</p>
+<p>
+    {% if material.udf2 != '' %}
+    <strong>UDF2:</strong> {{ material.udf2 }}{% endif %}</p>
+<p>
+    {% if material.udf3 != '' %}
+    <strong>UDF2:</strong> {{ material.udf3 }}{% endif %}</p>
+
+{% endblock %}
